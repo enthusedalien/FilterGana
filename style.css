@@ -1,1 +1,64 @@
 /* CSS file */
+html {
+    font-family: 'Helvetica';
+}
+
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-bar {
+    text-align: center;
+    width: 100%;
+    max-height: fit-content;
+    margin: 0 auto 15px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+}
+
+.nav-button {
+    display: block;
+    height: fit-content;
+    width: 50%;
+    padding: 15px 5px;
+    background-color: lightgrey;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+.home-main {
+    display: grid;
+    grid: "leftSide rightSide" auto;
+    width: 80%;
+    height: fit-content;
+    align-items: center;
+    margin: auto;
+}
+
+.logo-wrapper {
+    grid-area: leftSide;
+    width: 400px;
+    height: 400px;
+}
+
+.logo-wrapper img {
+    object-fit: scale-down;
+    max-height: 100%;
+}
+
+.home-about-wrapper {
+    grid-area: rightSide;
+    text-align: center;
+    margin: auto;
+}
+
+footer {
+    margin-top: auto;
+}
