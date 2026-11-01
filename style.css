@@ -1,6 +1,9 @@
 /* CSS file */
 html {
     font-family: 'Helvetica';
+    background-image: url("img/waves.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .flex-wrapper {
@@ -15,6 +18,7 @@ html {
     width: 100%;
     max-height: fit-content;
     margin: 0 auto 15px;
+    background-color: rgb(97, 84, 66);
 }
 
 nav {
@@ -27,9 +31,9 @@ nav {
     height: fit-content;
     width: 50%;
     padding: 15px 5px;
-    background-color: lightgrey;
+    background-color: rgb(218, 202, 180);
     border-style: solid;
-    border-color: white;
+    border-color: black;
     border-width: 1px;
 }
 
@@ -40,6 +44,9 @@ nav {
     height: fit-content;
     align-items: center;
     margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(218, 202, 180);
 }
 
 .logo-wrapper {
