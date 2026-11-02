@@ -1,9 +1,12 @@
 /* CSS file */
 html {
-    font-family: 'Helvetica';
-    background-image: url("img/waves.jpeg");
+    font-family: 'Calibri';
+    font-size: 13pt;
+    background-image: url("img/waves_a.png");
     background-repeat: no-repeat;
+    background-color:rgb(43, 39, 36);
     background-size: cover;
+    color: white;
 }
 
 .flex-wrapper {
@@ -32,9 +35,19 @@ nav {
     width: 50%;
     padding: 15px 5px;
     background-color: rgb(218, 202, 180);
+    color: black;
     border-style: solid;
     border-color: black;
     border-width: 1px;
+}
+
+.nav-button:hover {
+    background-color: rgb(164, 140, 106);
+    color: white;
+}
+
+.nav-button, .nav-button:visited {
+    text-decoration: none;
 }
 
 .home-main {
@@ -47,6 +60,7 @@ nav {
     padding: 5px;
     border-radius: 5px;
     background-color: rgb(218, 202, 180);
+    color: black;
 }
 
 .logo-wrapper {
@@ -68,4 +82,15 @@ nav {
 
 footer {
     margin-top: auto;
+    max-width: 100%;
+    height: fit-content;
+    padding: 3px;
+    background-color: rgba(164, 140, 106, 0.97);
+    color: rgb(34, 27, 18);
+    font-size: 11pt;
 }
+
+footer, .home-main {
+    box-shadow: 0 0 10px black;
+}
+
