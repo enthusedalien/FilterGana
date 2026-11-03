@@ -14,49 +14,35 @@
                 <h1>FilterGana</h1>
             </header>
             <nav>
-                <div class="nav-button"><a href="FilterGana\wordlist.html">Word List</a></div>
-                <div class="nav-button"><a href="#">Account</a></div>
+                <a class="nav-button" href="wordlist.html">Word List</a>
+                <a class="nav-button" href="#">Account</a>
             </nav>
         </div>
-        <div class="add-main">
             <main>
-                <h1 class="add-title">New Word Entry: </h1>
-                <br>
+                <div class="form-wrapper">
                 <!-- ADD PHP HERE @BRANDON -->
-                <form action="#" id="addform" method="post">
-                    <div class="add-field">
-                        <label for"kanjichar">Kanji character(s)<span class="required-format">*</span>: </label>
-                        <input type="text" id="kanjichar" name="kanjichar" required>
-                        <br>
-                    </div>
-                    
-                    <div class="add-field">
-                        <label for"furigana">Furigana<span class="required-format">*</span>: </label>
-                        <input type="text" id="furigana" name="furigana" required>
-                        <br>
-                    </div>
-                    
-                    <div class="add-field">
-                        <label for"okurigana">Okurigana: </label>
-                        <input type="text" id="okurigana" name="okurigana">
-                        <br>
-                    </div>
-
-                    <div class="add-field">
-                        <label for"englishtranslated">English Meaning: </label>
-                        <input type="text" id="englishtranslated" name="englishtranslated">
-                        <br>
-                    </div>
-                </form>
-
-                <div class="button-container">
-                    <button class="add-submit" type="submit" form="addform">Add to List</button>
-                    
-                    <a href="Filtergana/wordlist.html" class="add-button">Cancel</a>
+                    <form action="#" id="addform" method="post">
+                        <h2>New Word Entry:</h2>
+                        <div class="form-content">
+                            <label class="form-input" for="kanjichar">Kanji character(s)<span class="required-format">*</span>: 
+                                <input type="text" id="kanjichar" name="kanjichar" required>
+                            </label>  
+                            <label class="form-input" for="furigana">Furigana<span class="required-format">*</span>: 
+                                <input type="text" id="furigana" name="furigana" required>
+                            </label>
+                            <label class="form-input" for="okurigana">Okurigana: 
+                                <input type="text" id="okurigana" name="okurigana">
+                            </label>
+                            <label class="form-input" for="englishtranslated">English Meaning: 
+                                <input type="text" id="englishtranslated" name="englishtranslated">
+                            </label>
+                        </div>
+                        <input id="submit-word" class="hidden" type="submit" form="addform">
+                    </form>
+                    <label class="form-button" for="submit-word">Add to List</label>
+                    <a class="form-button" href="wordlist.html">Cancel</a>
                 </div>
-
             </main>
-        </div>
         <footer>
             <p>Team BWAA | Brandon Le, Waylon Fairbanks, Afnan Siddique, Adrian Siers | 2026</p>
         </footer>

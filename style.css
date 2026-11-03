@@ -4,9 +4,14 @@ html {
     font-size: 13pt;
     background-image: url("img/waves_a.png");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-color:rgb(43, 39, 36);
     background-size: cover;
     color: white;
+}
+
+.hidden {
+    display: none;
 }
 
 .flex-wrapper {
@@ -22,6 +27,10 @@ html {
     max-height: fit-content;
     margin: 0 auto 15px;
     background-color: rgb(97, 84, 66);
+}
+
+.top-bar h1 {
+    font-size: 24pt;
 }
 
 nav {
@@ -63,37 +72,6 @@ nav {
     color: black;
 }
 
-.add-main {
-    display: flex;
-    grid: "leftSide rightSide" auto;
-    flex-wrap: wrap;
-    width: 25%;
-    height: fit-content;
-    align-items: center;
-    margin: auto;
-    padding: 5px;
-    border-radius: 40px;
-    border-style: solid;
-    border-color: rgb(97, 84, 66);
-    border-width: 5px;
-    background-color: rgb(218, 202, 180);
-}
-
-.add-title {
-    max-height: fit-content;
-    padding: 30px;
-    font-weight: 1000;
-    font-size: xx-large;
-}
-
-.add-field {
-    max-height: fit-content;
-    padding: 15px;
-    padding-left: 30px;
-    font-size: x-large;
-
-}
-
 .logo-wrapper {
     grid-area: leftSide;
     width: 400px;
@@ -111,40 +89,66 @@ nav {
     margin: auto;
 }
 
-.button-container{
-   display: flex;
-   justify-content: center; 
-   align-items: center;    
-   gap: 140px;    
-   padding-top: 30px;
-   padding-bottom: 30px;   
+.form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 3% auto auto;
+    max-width: 40%;
+    height: fit-content;
+    padding: 10px 20px 40px;
+    border-radius: 40px;
+    border-style: solid;
+    border-color: rgb(97, 84, 66);
+    border-width: 5px;
+    background-color: rgb(218, 202, 180);
 }
 
-.add-submit {
-padding: 10px 20px;
-  background-color: rgb(97, 84, 66);
-  color: white;
-  border-radius: 5px;
-  text-align: center;
+.form-wrapper h2 {
+    text-shadow: 1px 1px rgb(34, 27, 18);
+    font-size: 22pt;
 }
 
-.add-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: rgb(97, 84, 66);
-  color: white;
-  text-decoration: none; /* Removes the default link underline */
-  border-radius: 5px;
-  text-align: center;
+.form-content {
+    margin: 3% auto;
+    padding: 0 20px 20px;
 }
 
-.add-button:hover {
-  background-color: rgb(66, 56, 44); /* Darkens the button slightly when hovered */
+.form-input {
+    display: inline-block;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 14pt;
+    color: rgb(34, 27, 18);
+}
+
+.form-input input[type=text] {
+    padding: 3px;
+}
+
+.form-button {
+    display: inline-block;
+    margin: auto;
+    padding: 10px 25px;
+    background-color: rgb(97, 84, 66);
+    color: rgb(218, 202, 180);
+    text-decoration: none; /* Removes the default link underline */
+    font-size: 12pt;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-button:hover {
+    color: white;
+    background-color: rgb(58, 49, 38); /* Darkens the button slightly when hovered */
 }
 
 .required-format {
     color: red;
     font-weight: bold;
+    font-size: 10pt;
 }
 
 footer {
