@@ -89,6 +89,13 @@ nav {
     margin: auto;
 }
 
+.list {
+    background-color: rgb(218, 202, 180);
+    color: black;
+    width: 50%;
+    height: 300px;
+}
+
 .form-wrapper {
     display: flex;
     flex-wrap: wrap;
