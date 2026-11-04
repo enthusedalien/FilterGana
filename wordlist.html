@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FilterGana - Home</title>
+    <title>FilterGana - Word list</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <div class="flex-wrapper">
@@ -14,13 +14,13 @@
                 <h1>FilterGana</h1>
             </header>
             <nav>
-                <div class="nav-button"><a href="index.html">Home</a></div>
-                <div class="nav-button"><a href="wordlist.html">Word list</a></div>
+                <a class="nav-button" href="index.html">Home</a>
+                <a class="nav-button" href="wordlist.html">Word List</a>
             </nav>
         </div>
         <main>
-            <section class="home-main">
-                <div class="home-about-wrapper">
+            <section id="list-main" class="uneven-split-main">
+                <div class="list">
                     <h2>Word List</h2>
                     <table border="2">
                         <tr><th>Word</th><th>Furigana</th><th>Meaning</th></tr>
@@ -30,10 +30,10 @@
                         <td><?php echo $row["Furigana"]; ?></td>
                         <td><?php echo $row["Meaning"]; ?></td>
                         </tr>
-                    </table>
-                                    
+                    </table>   
                 </div>
-            </section>
+                <a class="add-button" href="add-word.html">Add word</a> 
+            </section>    
         </main>
         <footer>
             <p>Team BWAA | Brandon Le, Waylon Fairbanks, Afnan Siddique, Adrian Siers | 2026</p>
