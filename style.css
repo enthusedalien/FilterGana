@@ -1,9 +1,17 @@
 /* CSS file */
 html {
-    font-family: 'Helvetica';
-    background-image: url("img/waves.jpeg");
+    font-family: 'Calibri';
+    font-size: 13pt;
+    background-image: url("img/waves_a.png");
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color:rgb(43, 39, 36);
     background-size: cover;
+    color: white;
+}
+
+.hidden {
+    display: none;
 }
 
 .flex-wrapper {
@@ -21,6 +29,10 @@ html {
     background-color: rgb(97, 84, 66);
 }
 
+.top-bar h1 {
+    font-size: 24pt;
+}
+
 nav {
     width: 100%;
     display: flex;
@@ -32,9 +44,19 @@ nav {
     width: 50%;
     padding: 15px 5px;
     background-color: rgb(218, 202, 180);
+    color: black;
     border-style: solid;
     border-color: black;
     border-width: 1px;
+}
+
+.nav-button:hover {
+    background-color: rgb(164, 140, 106);
+    color: white;
+}
+
+.nav-button, .nav-button:visited {
+    text-decoration: none;
 }
 
 .home-main {
@@ -47,6 +69,7 @@ nav {
     padding: 5px;
     border-radius: 5px;
     background-color: rgb(218, 202, 180);
+    color: black;
 }
 
 .logo-wrapper {
@@ -66,6 +89,86 @@ nav {
     margin: auto;
 }
 
+.list {
+    background-color: rgb(218, 202, 180);
+    color: black;
+    width: 50%;
+    height: 300px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 3% auto auto;
+    max-width: 40%;
+    height: fit-content;
+    padding: 10px 20px 40px;
+    border-radius: 40px;
+    border-style: solid;
+    border-color: rgb(97, 84, 66);
+    border-width: 5px;
+    background-color: rgb(218, 202, 180);
+}
+
+.form-wrapper h2 {
+    text-shadow: 1px 1px rgb(34, 27, 18);
+    font-size: 22pt;
+}
+
+.form-content {
+    margin: 3% auto;
+    padding: 0 20px 20px;
+}
+
+.form-input {
+    display: inline-block;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 14pt;
+    color: rgb(34, 27, 18);
+}
+
+.form-input input[type=text] {
+    padding: 3px;
+}
+
+.form-button {
+    display: inline-block;
+    margin: auto;
+    padding: 10px 25px;
+    background-color: rgb(97, 84, 66);
+    color: rgb(218, 202, 180);
+    text-decoration: none; /* Removes the default link underline */
+    font-size: 12pt;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-button:hover {
+    color: white;
+    background-color: rgb(58, 49, 38); /* Darkens the button slightly when hovered */
+}
+
+.required-format {
+    color: red;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
 footer {
     margin-top: auto;
+    max-width: 100%;
+    height: fit-content;
+    padding: 3px;
+    background-color: rgba(164, 140, 106, 0.97);
+    color: rgb(34, 27, 18);
+    font-size: 11pt;
 }
+
+footer, .home-main {
+    box-shadow: 0 0 10px black;
+}
+

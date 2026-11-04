@@ -1,1 +1,51 @@
 <!-- file for adding word form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilterGana - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="flex-wrapper">
+    <body>
+        <div class="top-bar">
+            <header>
+                <h1>FilterGana</h1>
+            </header>
+            <nav>
+                <a class="nav-button" href="index.html">Home</a>
+                <a class="nav-button" href="wordlist.html">Word List</a>
+            </nav>
+        </div>
+            <main>
+                <div class="form-wrapper">
+                <!-- ADD PHP HERE @BRANDON -->
+                    <form action="#" id="addform" method="post">
+                        <h2>New Word Entry:</h2>
+                        <div class="form-content">
+                            <label class="form-input" for="kanjichar">Kanji character(s)<span class="required-format">*</span>: 
+                                <input type="text" id="kanjichar" name="kanjichar" required>
+                            </label>  
+                            <label class="form-input" for="furigana">Furigana<span class="required-format">*</span>: 
+                                <input type="text" id="furigana" name="furigana" required>
+                            </label>
+                            <label class="form-input" for="okurigana">Okurigana: 
+                                <input type="text" id="okurigana" name="okurigana">
+                            </label>
+                            <label class="form-input" for="englishtranslated">English Meaning: 
+                                <input type="text" id="englishtranslated" name="englishtranslated">
+                            </label>
+                        </div>
+                        <input id="submit-word" class="hidden" type="submit" form="addform">
+                    </form>
+                    <label class="form-button" for="submit-word">Add to List</label>
+                    <a class="form-button" href="wordlist.html">Cancel</a>
+                </div>
+            </main>
+        <footer>
+            <p>Team BWAA | Brandon Le, Waylon Fairbanks, Afnan Siddique, Adrian Siers | 2026</p>
+        </footer>
+    </body>
+</div>
+</html>
