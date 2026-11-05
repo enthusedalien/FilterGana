@@ -40,7 +40,7 @@
                         <input id="submit-word" class="hidden" type="submit" form="addform">
 
                     </form>
-                    <a class="form-button" href="wordlist.html">Cancel</a>
+                    <a class="form-button" href="wordlist.php">Cancel</a>
                     <label class="form-button" for="submit-word">Add to List</label>
                     <p class="required-footer">*required</p>
                 </div>
