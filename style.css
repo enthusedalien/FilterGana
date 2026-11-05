@@ -1,4 +1,4 @@
-/* CSS file */
+/* CSS file for FilterGana*/
 html {
     font-family: 'Calibri';
     font-size: 13pt;
@@ -102,7 +102,7 @@ nav {
     justify-content: center;
     margin: auto;
     width: 100%;
-    max-height: 300px;
+    height: 480px;
     overflow-y: scroll;
     padding: 10px;
     background-color: rgb(97, 84, 66);
@@ -139,7 +139,7 @@ nav {
     margin: auto;
     position: sticky;
     text-align: center;
-    text-decoration: none; /* Removes the default link underline */
+    text-decoration: none;
     border-style: outset;
     border-width: 3px;
     border-color: rgb(58, 49, 38);
@@ -170,7 +170,7 @@ nav {
     border-radius: 40px;
     border-style: solid;
     border-color: rgb(97, 84, 66);
-    border-width: 5px;
+    border-width: 4px;
     background-color: rgb(218, 202, 180);
 }
 
@@ -198,37 +198,40 @@ nav {
 
 .form-button {
     display: inline-block;
-    margin: auto auto 10%;
-    padding: 10px 25px;
+    margin: auto 5% 5% 15%;
+    width: fit-content;
+    padding: 10px 30px;
     background-color: rgb(97, 84, 66);
     color: rgb(218, 202, 180);
     text-decoration: none;
     font-size: 12pt;
     font-weight: bold;
-    border-style: none;
+    border-style: outset;
+    border-color: rgb(97, 84, 66);
     border-radius: 5px;
     text-align: center;
 }
 
 .form-button:hover {
     color: white;
-    background-color: rgb(58, 49, 38); /* Darkens the button slightly when hovered */
+    background-color: rgb(58, 49, 38);
+    border-style: inset;
+    border-color: rgb(58, 49, 38);
     cursor: pointer;
 }
-.required-format {
+.required-format, .required-footer {
     color: red;
     font-weight: bold;
     font-size: 10pt;
 }
 
 .required-footer {
-    color: red;
-    font-weight: bold;
-    font-size: 10pt;
+    align-items: right;
+    justify-content: right;
     text-align: right;
     margin-top: auto;
+    margin-left: auto;
 }
-
 
 footer {
     margin-top: auto;
@@ -243,4 +246,3 @@ footer {
 footer, .home-main {
     box-shadow: 0 0 10px black;
 }
-

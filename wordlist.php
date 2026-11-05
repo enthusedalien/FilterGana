@@ -15,7 +15,7 @@
             </header>
             <nav>
                 <a class="nav-button" href="index.html">Home</a>
-                <a class="nav-button" href="wordlist.html">Word List</a>
+                <a class="nav-button" href="wordlist.php">Word List</a>
             </nav>
         </div>
         <main>
@@ -32,17 +32,19 @@
                         ?>
                     <h2>Word List</h2>
                         <table border = "1">
-                            <tr><th>Word</th><th>Furigana</th><th>Meaning</th></tr>
-                            <?php while ($row = mysqli_fetch_assoc($result)) { ?>
-                                <tr>
-                                    <td><?php echo $row["kanji"] . $row["okurigana"];?></td>
-                                    <td><?php echo $row["furigana"];?></td>
-                                    <td><?php echo $row["meaning"];?></td>
-                                </tr>
-                            <?php } ?>
-                        </table>
+                            <tbody>
+                                <tr><th>Word</th><th>Furigana</th><th>Meaning</th></tr>
+                                <?php while ($row = mysqli_fetch_assoc($result)) { ?>
+                                    <tr>
+                                        <td><?php echo $row["kanji"] . $row["okurigana"];?></td>
+                                        <td><?php echo $row["furigana"];?></td>
+                                        <td><?php echo $row["meaning"];?></td>
+                                    </tr>
+                                <?php } ?>
+                            </tbody>
+                        </table><?php mysqli_close($conn);?>
                 </div>
-                <a class="add-button" href="add-word.html">Add word</a> 
+                <a class="add-button" href="form.php">Add word</a> 
             </section>    
         </main>
         <footer>
