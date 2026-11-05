@@ -44,7 +44,7 @@
                             </tbody>
                         </table><?php mysqli_close($conn);?>
                 </div>
-                <a class="add-button" href="add-word.html">Add word</a> 
+                <a class="add-button" href="form.php">Add word</a> 
             </section>    
         </main>
         <footer>
