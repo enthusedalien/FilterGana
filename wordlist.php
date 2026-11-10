@@ -36,9 +36,10 @@
                                 <tr><th>Word</th><th>Furigana</th><th>Meaning</th></tr>
                                 <?php while ($row = mysqli_fetch_assoc($result)) { ?>
                                     <tr>
-                                        <td><?php echo $row["kanji"] . $row["okurigana"];?></td>
-                                        <td><?php echo $row["furigana"];?></td>
-                                        <td><?php echo $row["meaning"];?></td>
+                                        <!-- Anti-XSS & Anti-HTML -->
+                                        <td><?php echo htmlspecialchars($row["kanji"] . $row["okurigana"], ENT_QUOTES, 'UTF-8'); ?></td>
+                                        <td><?php echo htmlspecialchars($row["furigana"], ENT_QUOTES, 'UTF-8'); ?></td>
+                                        <td><?php echo htmlspecialchars($row["meaning"], ENT_QUOTES, 'UTF-8'); ?></td>
                                     </tr>
                                 <?php } ?>
                             </tbody>
