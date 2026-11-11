@@ -13,7 +13,12 @@ if (strlen($kanji) > 10 ||
     strlen($okurigana) > 5 ||
     strlen($furigana) > 15 ||
     strlen($meaning) > 75) {
-    die("Input too long.");
+    
+    echo "<script>
+        alert('Input too long.');
+        window.location.href='form.php';
+        </script>";
+    exit;
 }
 
 #Anti-SQL Injection Build
