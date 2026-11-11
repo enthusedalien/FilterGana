@@ -127,6 +127,7 @@ nav {
 
 .list th, .list tr, .list td {
     height: fit-content;
+    word-break: break-all;
     padding: 20px;
 }
 
