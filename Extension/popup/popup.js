@@ -1,1 +1,1 @@
-console.log("THIS IS A POPUP. AFNAN IS THE GOAT")
+console.log("Popup Loaded succesfully")

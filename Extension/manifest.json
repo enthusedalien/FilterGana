@@ -3,6 +3,19 @@
     "description": "Extension to be used with a Filtergana account to read user-selected excluded Furigana from Japanese websites to help the user better learn Japanese",
     "version": "0.1",
     "manifest_version": 3,
+    "permissions": [],
+    "host_permissions": ["http://localhost/Filtergana/Filtergana/extension-endpoint.php"],
+    "background": 
+    {
+        "service_worker": "script/background.js"
+    },
+    "content_scripts": 
+    [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["script/content.js"]
+        }
+    ],
     "action": 
     {
         "default_popup": "popup/hello.html",
