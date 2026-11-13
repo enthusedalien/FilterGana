@@ -9,12 +9,12 @@ $furigana = strip_tags(trim($_POST["furigana"]));
 $meaning = strip_tags(trim($_POST["meaning"]));
 
 # Doesn't let inputs exceed these given lengths
-if (strlen($kanji) > 10 ||
-    strlen($okurigana) > 5 ||
-    strlen($furigana) > 15 ||
-    strlen($meaning) > 75) {
+if (mb_strlen($kanji) > 10 ||
+    mb_strlen($okurigana) > 5 ||
+    mb_strlen($furigana) > 15 ||
+    mb_strlen($meaning) > 75) {
         echo "<script>
-            window.alert('Input too long.');
+            alert('Input too long.');
             window.location.href='form.php';
             </script>";
         exit;
