@@ -1,4 +1,4 @@
-<!-- file for adding word form -->
+<!-- Add Word Form -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +20,6 @@
         </div>
             <main>
                 <div class="form-wrapper">
-                <!-- ADD PHP HERE @BRANDON -->
                     <form action="add-word.php" id="addform" method="post">
                         <h2>New Word Entry:</h2>
                         <div class="form-content">

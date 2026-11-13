@@ -1,27 +1,26 @@
 <?php
 $conn = mysqli_connect("localhost", "root", "", "filtergana");
-#Doing this prevents weird html characters from being inputed into our database as gibberish
-#Gibberish is better than threatening html characters
-#More secure against XSS and HTML injections
+# Doing this prevents weird html characters from being inputed into our database as gibberish
+# Gibberish is better than threatening html characters
+# More secure against XSS and HTML injections
 $kanji = strip_tags(trim($_POST["kanji"]));
 $okurigana = strip_tags(trim($_POST["okurigana"]));
 $furigana = strip_tags(trim($_POST["furigana"]));
 $meaning = strip_tags(trim($_POST["meaning"]));
 
-#Doesn't let inputs exceed these given lengths
+# Doesn't let inputs exceed these given lengths
 if (strlen($kanji) > 10 ||
     strlen($okurigana) > 5 ||
     strlen($furigana) > 15 ||
     strlen($meaning) > 75) {
-    
-    echo "<script>
-        alert('Input too long.');
-        window.location.href='form.php';
-        </script>";
-    exit;
+        echo "<script>
+            window.alert('Input too long.');
+            window.location.href='form.php';
+            </script>";
+        exit;
 }
 
-#Anti-SQL Injection Build
+# Anti-SQL Injection Build
 $stmt = mysqli_prepare(
     $conn,
     "INSERT INTO filtered_words (kanji, okurigana, furigana, meaning)
