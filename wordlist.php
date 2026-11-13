@@ -1,4 +1,4 @@
-<!-- Word List page -->
+<!-- Word List -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,15 +31,17 @@
                             $result = mysqli_query($conn, $sql);
                         ?>
                     <h2>Word List</h2>
-                        <table border = "1">
+                        <table border="1">
                             <tbody>
-                                <tr><th>Word</th><th>Furigana</th><th>Meaning</th></tr>
+                                <tr><th>Word</th><th>Furigana</th><th>Meaning</th><th></th></tr>
                                 <?php while ($row = mysqli_fetch_assoc($result)) { ?>
                                     <tr>
                                         <!-- Anti-XSS & Anti-HTML -->
                                         <td><?php echo htmlspecialchars($row["kanji"] . $row["okurigana"], ENT_QUOTES, 'UTF-8'); ?></td>
                                         <td><?php echo htmlspecialchars($row["furigana"], ENT_QUOTES, 'UTF-8'); ?></td>
                                         <td><?php echo htmlspecialchars($row["meaning"], ENT_QUOTES, 'UTF-8'); ?></td>
+                                        <td>
+                                            <a class="t-button" href="delete-word.php?kanji=<?php echo htmlspecialchars($row["kanji"], ENT_QUOTES, 'UTF-8'); ?>">Delete</a></td>
                                     </tr>
                                 <?php } ?>
                             </tbody>

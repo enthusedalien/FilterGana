@@ -74,6 +74,8 @@ nav {
 
 .uneven-split-main {
     display: grid;
+    margin: auto;
+    padding: 5px;
     grid: "leftSide rightSide" 30% / 70%;
     column-gap: 15px;
 }
@@ -125,14 +127,33 @@ nav {
     color: rgb(34, 27, 18);
 }
 
-.list th, .list tr, .list td {
+.list td{
     height: fit-content;
     word-break: break-all;
     padding: 20px;
+    background-color: rgb(218, 202, 180);
 }
 
-.list td {
-    background-color: rgb(218, 202, 180);
+.t-button {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    padding: 8px 3px;
+    margin: 2px auto;
+    color: rgb(34, 27, 18);
+    background-color: rgb(164, 140, 106);
+    border-color: rgb(164, 140, 106);
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: outset;
+}
+
+.t-button:hover {
+    color: rgb(218, 202, 180);
+    background-color: rgb(97, 84, 66);
+    border-color: rgb(97, 84, 66);
+    border-width: 2px;
+    border-style: inset;
 }
 
 .add-button {
