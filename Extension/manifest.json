@@ -13,7 +13,8 @@
     [
         {
             "matches": ["<all_urls>"],
-            "js": ["script/content.js"]
+            "js": ["script/content.js"],
+            "run_at": "document_idle"
         }
     ],
     "action": 

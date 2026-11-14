@@ -28,7 +28,7 @@
         mysqli_set_charset($conn, "utf8mb4");
 
         // obtain the furigana contents from SQL database to be sent to the extension
-        $sql = "SELECT furigana FROM filtered_words";
+        $sql = "SELECT kanji, furigana FROM filtered_words";
     
         // What is obtained from the sql query
         $queryResult = mysqli_query($conn, $sql);
@@ -37,6 +37,7 @@
         if ($queryResult)
         {
             $row = mysqli_fetch_all($queryResult, MYSQLI_ASSOC);
+            // $filtered_words = array_column($row, 'furigana');
             echo json_encode(['status' => 'success', 'result' => $row]);
         }
         else
