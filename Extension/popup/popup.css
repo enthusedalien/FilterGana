@@ -1,0 +1,32 @@
+html {
+    font-family: 'Calibri';
+    font-size: 13pt;
+    background-image: url("../img/waves_a.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color:rgb(43, 39, 36);
+    background-size: cover;
+    color: white;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
+    align-self: center;
+    text-align: center;
+    margin: 15px;
+    background-color: rgb(218, 202, 180);
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 8px;
+}
+
+.contents 
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
