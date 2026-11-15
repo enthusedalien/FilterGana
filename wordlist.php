@@ -41,7 +41,14 @@
                                         <td><?php echo htmlspecialchars($row["furigana"], ENT_QUOTES, 'UTF-8'); ?></td>
                                         <td><?php echo htmlspecialchars($row["meaning"], ENT_QUOTES, 'UTF-8'); ?></td>
                                         <td>
-                                            <a class="t-button" href="delete-word.php?kanji=<?php echo htmlspecialchars($row["kanji"], ENT_QUOTES, 'UTF-8'); ?>">Delete</a></td>
+                                            <a class="t-button" href="update-form.php?kanji=<?php echo htmlspecialchars($row["kanji"], ENT_QUOTES, 'UTF-8'); ?>
+                                            &okurigana=<?php echo htmlspecialchars($row["okurigana"], ENT_QUOTES, 'UTF-8'); ?>
+                                            &furigana=<?php echo htmlspecialchars($row["furigana"], ENT_QUOTES, 'UTF-8'); ?>
+                                            &meaning=<?php echo htmlspecialchars($row["meaning"], ENT_QUOTES, 'UTF-8'); ?>
+                                            ">Update</a>
+                                            <a class="t-button" href="delete-word.php?kanji=<?php echo htmlspecialchars($row["kanji"], ENT_QUOTES, 'UTF-8'); ?>
+                                            &furigana=<?php echo htmlspecialchars($row["furigana"], ENT_QUOTES, 'UTF-8'); ?>
+                                            ">Delete</a></td>
                                     </tr>
                                 <?php } ?>
                             </tbody>
