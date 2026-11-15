@@ -138,6 +138,7 @@ nav {
     display: inline-block;
     text-decoration: none;
     width: 100%;
+    height: fit-content;
     padding: 8px 3px;
     margin: 2px auto;
     color: rgb(34, 27, 18);
