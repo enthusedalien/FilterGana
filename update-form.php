@@ -61,7 +61,9 @@
                         </div>
                         <input id="submit-word" class="hidden" type="submit" form="modform">
                     </form>
-                    <a class="form-button" href="wordlist.php">Cancel</a>
+                        <!-- Unset variables and destroy session if user cancels -->
+                    <form action="cancel-update.php" class="hidden" id="cancelform" method="post"><input class="hidden" id="cancel" type="submit" form="cancelform"></form>
+                    <label class="form-button" for="cancel">Cancel</label>
                     <label class="form-button" for="submit-word">Update word</label>
                     <p class="required-footer">*required</p>
                 </div>
