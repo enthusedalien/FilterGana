@@ -3,9 +3,5 @@
     session_unset(); # Unset variables
     session_destroy(); # Destroy session
 
-    echo '<pre> Session: ';
-    print_r($_SESSION);
-    echo '</pre>';
-
     header("Location: wordlist.php");
 ?>
