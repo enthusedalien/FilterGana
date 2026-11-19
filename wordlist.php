@@ -30,7 +30,10 @@
 
                             $result = mysqli_query($conn, $sql);
                         ?>
-                    <h2>Word List</h2>
+                    <div class="t-head">
+                        <h2>Word List</h2>
+                        <a class="t-head-button" href="anki-export.php">Export for Anki</a>
+                    </div>
                         <table border="1">
                             <tbody>
                                 <tr><th>Word</th><th>Furigana</th><th>Meaning</th><th></th></tr>

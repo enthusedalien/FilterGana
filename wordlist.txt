@@ -1,0 +1,6 @@
+# Word list exported from FilterGana webpage, formatted for Anki; fields are separated using |.
+天気|てんき, Weather
+花|はな, Flower
+思う|おもう, To think
+時間|じかん, Time
+様子|ようす
