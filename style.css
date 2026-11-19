@@ -115,6 +115,29 @@ nav {
     border-style: inset;
 }
 
+.t-head-button {
+    float: left;
+    text-decoration: none;
+    font-size: 12pt;
+    color: rgb(218, 202, 180);
+    text-shadow: 1px 1px 1px rgb(34, 27, 18);
+    background-color: rgba(58, 49, 38, 0.45);
+    border-color: rgb(58, 49, 38);
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px 15px;
+    margin: auto auto 8px;
+}
+
+.t-head-button:hover {
+    color: white;
+    background-color: rgb(58, 49, 38);
+    border-color: rgb(43, 39, 36);
+    border-width: 1px;
+    border-style: inset;
+}
+
 .list h2 {
     font-size: 20pt;
     margin: 10px;
